@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IJP Software Page</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="./assets/img/logo.png" alt="logo IJP" class="logo" />
 
       <nav class="navbar">
+        <input type="checkbox" id="toggle-menu" />
+        <label for="toggle-menu"><i class="fas fa-bars"></i></label>
         <ul class="navbar-list">
           <li><a href="#">INICIO</a></li>
           <li><a href="#">SERVICIOS</a></li>
@@ -24,7 +33,7 @@
       <!-- hero -->
       <section id="hero">
         <div class="hero-info">
-          <h1>Desarrollamos tu Futuro con Creatividad</h1>
+          <h1>Desarrollamos tu Futuro <span>con Creatividad</span></h1>
 
           <p>
             Creamos soluciones de software que se adaptan a las necesidades de
@@ -57,6 +66,85 @@
           comunes.
         </p>
       </section>
+
+      <!-- cards -->
+      <section id="cards">
+        <h2>Nuestras Ventajas</h2>
+
+        <div class="cards-conteiner">
+          <div class="cards-info">
+            <img
+              src="./assets/img/img_trayectoria.png"
+              alt="imagen de trayectoria"
+              class="img-cards"
+            />
+            <h3>Trayectoria</h3>
+            <p>
+              Contamos con 20 años de experiencia en el rubro IT siempre
+              innovando y conectando con las empresas.
+            </p>
+          </div>
+          <div class="cards-info">
+            <img
+              src="./assets/img/img_consultoria.png"
+              alt="imagen de consultoria"
+              class="img-cards"
+            />
+            <h3>Consultoria</h3>
+            <p>
+              Se realizan análisis de proyectos y como afrontarlos para elevar
+              la eficiencia.
+            </p>
+          </div>
+          <div class="cards-info">
+            <img
+              src="./assets/img/img_seguimiento.png"
+              alt="imagen de seguimiento"
+              class="img-cards"
+            />
+            <h3>Seguimiento</h3>
+            <p>
+              Nos enfocamos en el proceso de inicio a fin acompañando al cliente
+              y brindando soporte de alta satisfacción.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- contactanos-->
+      <section id="contactanos">
+        <div class="cont-conteiner">
+          <div class="cont-text">
+            <h2>Contactanos</h2>
+            <div class="cont-text-d">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Iturraspe 2007, Santa Fe, Argentina</p>
+            </div>
+            <div class="cont-text-e">
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@ijpsistemas.com.ar</p>
+            </div>
+            <div class="cont-text-t">
+              <i class="fa-solid fa-mobile"></i>
+              <p>(+54 342) 5234085</p>
+            </div>
+          </div>
+          <div class="cont-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.117477078901!2d-60.69701808529907!3d-31.630633713811708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a9eb1b13a507%3A0xbf1cdc8dce8f0d5f!2sIturraspe%202007%2C%20S3002%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1664751596576!5m2!1ses!2sar"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- footer -->
+    <footer>
+      <p>Desarrollado por VT Estudios</p>
+    </footer>
   </body>
 </html>
